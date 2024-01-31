@@ -1,15 +1,15 @@
 /// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-// TODO: Add SDKs for Firebase products that you want to use
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCmC_STWRrC9WhU2N4kiAQl98Kc3vryyEM",
-  authDomain: "paid-courses-1.firebaseapp.com",
-  projectId: "paid-courses-1",
-  storageBucket: "paid-courses-1.appspot.com",
-  messagingSenderId: "553952769840",
-  appId: "1:553952769840:web:4eebb4470566ac32e83af5",
+  apiKey: "AIzaSyAHdmAJbVX-2JFtuuXMo6xC7cyQrVzBg8g",
+  authDomain: "assignment-task10.firebaseapp.com",
+  projectId: "assignment-task10",
+  storageBucket: "assignment-task10.appspot.com",
+  messagingSenderId: "977085989853",
+  appId: "1:977085989853:web:1217f209598f629863ec34"
 };
 
 // Initialize Firebase

@@ -22,6 +22,13 @@ const Login = () => {
       .then((res) => {
         const user = res.user;
         console.log(user.email);
+        Swal.fire({
+          position: "top-center",
+          icon: "success",
+          title: "Login Successfully",
+          showConfirmButton: false,
+          timer: 1500,
+        })
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) =>

@@ -56,6 +56,13 @@ const Register = () => {
     createUser(email, password)
       .then(() => {
         profileUpdate(name, photo).then(() => {
+          Swal.fire({
+            position: "top-center",
+            icon: "success",
+            title: "Login Successfully",
+            showConfirmButton: false,
+            timer: 1500,
+          })
           window.location.reload();
         });
         navigate("/");
@@ -122,7 +129,7 @@ const Register = () => {
                 <input
                   type="text"
                   name="photo"
-                  placeholder="Enter URL"
+                  placeholder="Enter Photo URL"
                   className="input input-bordered"
                 />
               </div>
