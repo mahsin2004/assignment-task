@@ -4,7 +4,6 @@ import Error from "../pages/Error";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Home from "../pages/Home";
-import PrivetRoute from "./PrivetRoute";
 import Details from "../movies/Details";
 import AllCourses from "../movies/AllMovies";
 
@@ -25,11 +24,7 @@ const Router = createBrowserRouter([
       },
       {
         path: "/details/:id",
-        element: (
-          <PrivetRoute>
-            <Details />
-          </PrivetRoute>
-        ),
+        element: <Details />,
         loader: ({ params }) => fetch(`/details/${params.id}`),
       },
     ],
@@ -42,7 +37,6 @@ const Router = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
-  
 ]);
 
 export default Router;

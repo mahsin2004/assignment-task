@@ -10,7 +10,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "Log In | Paid Courses";
+    document.title = "Log In | BDmovies";
   }, []);
 
   const handleLogin = (e) => {

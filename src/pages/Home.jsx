@@ -1,5 +1,7 @@
 import { useEffect } from "react";
-import Category from "../components/Category";
+
+import AllMovies from "../movies/AllMovies";
+import Banner from "../components/Banner";
 
 
 const Home = () => {
@@ -8,7 +10,8 @@ const Home = () => {
   }, []);
   return (
     <div className="bg-white dark:bg-black">
-      <Category></Category>
+      <Banner></Banner>
+      <AllMovies></AllMovies>
     </div>
   );
 };

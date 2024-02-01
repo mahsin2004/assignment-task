@@ -9,7 +9,7 @@ const Register = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    document.title = "Register | Paid Courses";
+    document.title = "Register | BDmovies";
   }, []);
 
   const handleRegister = (e) => {
@@ -26,7 +26,7 @@ const Register = () => {
         icon: "error",
         title: "Password should be 6 characters or more",
         showConfirmButton: false,
-        timer: 1500,
+        timer: 2000,
       });
       return;
     }
@@ -37,7 +37,7 @@ const Register = () => {
         icon: "error",
         title: "Password should have at least one capital letter",
         showConfirmButton: false,
-        timer: 1500,
+        timer: 2000,
       });
       return;
     }
@@ -48,7 +48,7 @@ const Register = () => {
         icon: "error",
         title: "Password should have at least one special character",
         showConfirmButton: false,
-        timer: 1500,
+        timer: 2000,
       });
       return;
     }
@@ -61,7 +61,7 @@ const Register = () => {
             icon: "success",
             title: "Login Successfully",
             showConfirmButton: false,
-            timer: 1500,
+            timer: 2000,
           })
           window.location.reload();
         });
@@ -73,7 +73,7 @@ const Register = () => {
           icon: "error",
           title: error.message,
           showConfirmButton: false,
-          timer: 1500,
+          timer: 2000,
         })
       );
   };

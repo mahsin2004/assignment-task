@@ -18,20 +18,10 @@ const Navbar = () => {
           isPending ? "pending" : isActive ? "text-red-400 " : ""
         }
       >
-        <li className="py-2 px-4 text-base hover:text-red-400 font-medium">
+        <li className="py-2 px-4 text-lg hover:text-red-400 font-medium">
           Home
         </li>
-      </NavLink>
-      <NavLink
-        to="/courses"
-        className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "text-red-400" : ""
-        }
-      >
-        <li className="py-2 px-4 text-base hover:text-red-400 font-medium">
-          All Movies
-        </li>
-      </NavLink>  
+      </NavLink> 
     </>
   );
 
@@ -80,7 +70,7 @@ const Navbar = () => {
                 <div className="flex items-center lg:gap-3">
                   <button
                     onClick={handleLogOut}
-                    className="py-2 px-3 lg:pl-4 text-base hover:text-red-400 font-medium"
+                    className="py-2 px-3 lg:pl-4 text-lg hover:text-red-400 font-medium"
                   >
                     Log out
                   </button>
@@ -101,7 +91,7 @@ const Navbar = () => {
                     isPending ? "pending" : isActive ? " text-red-500" : ""
                   }
                 >
-                  <p className="py-2 px-4 text-base hover:text-red-400 font-medium">
+                  <p className="py-2 px-4 text-lg hover:text-red-400 font-medium">
                     Log In
                   </p>
                 </NavLink>
