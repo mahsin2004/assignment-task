@@ -62,7 +62,7 @@ const AllMovies = () => {
         <p className="text-xl md:text-4xl lg:text-5xl font-bold">All Movies</p>
       </div>
 
-      <div className="grid md:col-span-2 lg:grid-cols-4 gap-5">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
         {filterMovies.length > 0 ? (
           filterMovies.map((movie) => (
             <MoviesCart key={movie.show.id} movie={movie}></MoviesCart>
