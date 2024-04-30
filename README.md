@@ -1,15 +1,22 @@
-## BDmovies
 
-## Installation
+# User
+## Delete User
+``` 
+control.users 
+```
+### message
+``` 
+control.users 
+```
+### Example Request
 
-**Clone the repository:** <br/>
-<ul>
-  <li>
-Change into the project directory: cd assignment-task</li>
-<li>
-Install dependencies: npm install</li>
+```json
+{
+    "name": "John Doe",
+    "address": "123 Main St",
+    "phone": "0171182233",
+    "email": "b4@example.com",
+    "password": "mypassword",
 
-  <li>start the development server with (npm run dev)</li>
-</ul>
-
-
+}
+```
